@@ -4,16 +4,8 @@ Local AI API router with OpenAI-compatible endpoint and web dashboard.
 
 ## Install
 
-### From npm
-
 ```bash
 npm install -g napi
-```
-
-### From GitHub
-
-```bash
-npm install -g github:nguoikhongten02022005-cell/napi
 ```
 
 ## Quick start
@@ -49,9 +41,9 @@ napi --help
 
 ```bash
 git clone https://github.com/nguoikhongten02022005-cell/napi.git
-cd napi
-cd cli
-npm run pack:cli
+cd napi/cli
+npm run build
+npm pack --pack-destination /tmp
 npm install -g /tmp/napi-*.tgz
 napi
 ```

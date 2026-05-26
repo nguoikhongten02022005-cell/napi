@@ -18,7 +18,7 @@
     "pack:cli": "npm run build && npm pack --ignore-scripts --pack-destination /tmp",
     "publish:cli": "npm run build && npm publish",
     "postinstall": "node hooks/postinstall.js",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build && npm pack --dry-run --pack-destination /tmp"
   },
   "dependencies": {
     "enquirer": "^2.4.1",
