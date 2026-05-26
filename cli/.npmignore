@@ -1,0 +1,11 @@
+# Ignore everything except what's in package.json "files"
+*
+!cli.js
+!src/
+!hooks/
+!app/
+!package.json
+!README.md
+!LICENSE
+app/.next-cli-build/cache/
+app/.next-cli-build/diagnostics/
